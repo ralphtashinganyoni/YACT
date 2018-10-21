@@ -7724,3 +7724,10 @@
   .invisible {
     visibility: hidden !important;
   }
+  .header{
+    margin-left: 10em !important; 
+
+  }
+  .headertext{
+    margin-left : 21em !important;
+  }

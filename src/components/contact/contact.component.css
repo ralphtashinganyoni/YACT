@@ -12,7 +12,7 @@
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-    background-color: red;
+    background-color:  #b60808;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -22,7 +22,7 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-    background-color: red;
+    background-color:  #b60808;
 }
 
 /* Add a background color and some padding around the form */

@@ -1,4 +1,5 @@
-/* @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* 
 #cssmenu ul,
 #cssmenu li,
 #cssmenu span,
@@ -267,5 +268,21 @@ body{
 
 }
 .navbar-nav{
-  margin-left: 74em;
+  margin-left: 60em;
+}
+
+.navbar{
+  background-color:  #b60808 !important;
+}
+.nav-link{
+  color: whitesmoke !important;
+}
+.navbar-brand{
+  color: whitesmoke !important;
+}
+@media only screen and (max-width: 767px) {
+
+  .navbar-nav{
+    margin-left: 0 !important;
+  }
 }

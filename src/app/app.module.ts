@@ -14,6 +14,7 @@ import { AccordionModule } from 'primeng/primeng';
 import { PanelModule } from 'primeng/primeng';
 import { ButtonModule } from 'primeng/primeng';
 import { RadioButtonModule } from 'primeng/primeng';
+import { PageUnderConstructionComponent } from '../components/page-under-construction/page-under-construction.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { RadioButtonModule } from 'primeng/primeng';
     OurTeamComponent,
     BlogComponent,
     FqaComponent,
+    PageUnderConstructionComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,7 +41,8 @@ import { RadioButtonModule } from 'primeng/primeng';
       { path: 'gallery', component: GalleryComponent },
       { path: 'contact', component: ContactComponent },
       { path: 'our-team', component: OurTeamComponent },
-      { path: 'frequently-asked-questions', component: FqaComponent }
+      { path: 'frequently-asked-questions', component: FqaComponent },
+      { path: 'page-under-construction', component: PageUnderConstructionComponent },
     ])
   ],
   providers: [],

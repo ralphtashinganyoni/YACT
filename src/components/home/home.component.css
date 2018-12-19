@@ -3005,7 +3005,7 @@
     color: #495057;
     background-color: #fff;
     border-color: #ddd #ddd #fff;
-    cursor: pointer;
+    cursor: initial;
   }
   
   .nav-tabs .dropdown-menu {

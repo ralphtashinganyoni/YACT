@@ -1,11 +1,14 @@
 <html>
 
-<head>
+<!-- <div *ngIf="loading" class="spinner" ></div> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-</head>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<img class="logo" src="../assets/images/logo.jpg">
 	<a class="navbar-brand" href="#">Yamurai Aids Care Trust</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
 	 aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +32,7 @@
 						Media Center
 					</h5>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						<h5 class="dropdown-item" href="#">Blog</h5>
+	  <h5 class="dropdown-item" [routerLink]="['/page-under-construction']">Blog</h5>
 						<h5 class="dropdown-item" [routerLink]="['/gallery']">Gallery</h5>
 					</div>
 				</li>
@@ -44,39 +47,21 @@
 </router-outlet>
 <br />
 <!-- Footer -->
-<section id="footer">
+<section id="footer" style="margin-top: 0px !important">
 	<div class="container">
 		<div class="row text-center text-xs-center text-sm-left text-md-left">
 			<div class="col-xs-12 col-sm-4 col-md-4">
 				<h5>Quick links</h5>
 				<ul class="list-unstyled quick-links">
 					<li><a class="nav-link"  [routerLink]="['']" routerLinkActive="active"><i class="fa fa-angle-double-right"></i>Home</a></li>
-					<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
-					<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-					<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
-					<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+					<li><a [routerLink]="['/about-us']"><i class="fa fa-angle-double-right"></i>About Us</a></li>
+					<li><a [routerLink]="['/our-team']"><i class="fa fa-angle-double-right"></i>Our Team</a></li>
+					<li><a [routerLink]="['/gallery']"><i class="fa fa-angle-double-right"></i>Gallery</a></li>
+					<li><a [routerLink]="['/frequently-asked-questions']"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
 				</ul>
 			</div>
-			<div class="col-xs-12 col-sm-4 col-md-4">
-				<h5>Quick links</h5>
-				<ul class="list-unstyled quick-links">
-					<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
-					<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
-					<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-					<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
-					<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
-				</ul>
-			</div>
-			<div class="col-xs-12 col-sm-4 col-md-4">
-				<h5>Quick links</h5>
-				<ul class="list-unstyled quick-links">
-					<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
-					<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
-					<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-					<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
-					<li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
-				</ul>
-			</div>
+			
+			
 		</div>
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
@@ -92,7 +77,7 @@
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
 				<p><u><a href="https://www.facebook.com/yamuraicaretrust">Yamurai Aids Care Trust</a></u> is an organisation that cares for the less priviledged</p>
-				<p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="https://www.technoextreme.co.zw" target="_blank">Techno Extreme Pvt Ltd</a></p>
+				<p class="h6">&copy;Copyright 2019, All right Reversed.<a class="text-green ml-2" href="https://www.technoextreme.co.zw" target="_blank">Techno Extreme Pvt Ltd</a></p>
 			</div>
 		</div>	
 	</div>

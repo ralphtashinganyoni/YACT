@@ -8,7 +8,9 @@
 section {
     padding: 60px 0;
 }
-
+.logo{
+  width: 5em;
+}
 section .section-title {
     text-align: center;
     color: #007b5e;
@@ -17,6 +19,8 @@ section .section-title {
 }
 #footer {
     background: #b60808 !important;
+    padding: 1rem;
+    bottom: 0;
 }
 #footer h5{
 	padding-left: 10px;
@@ -78,9 +82,7 @@ section .section-title {
     margin-bottom: 10px;
 }
 }
-/* body{
-  background-color: whitesmoke;
-  background-image: url('../assets/images/hivaids.jpg') ;
+body{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -89,7 +91,7 @@ section .section-title {
   -o-background-size: cover;
   height:100%;
 
-} */
+}
 .navbar-nav{
   margin-left: 60em;
 }

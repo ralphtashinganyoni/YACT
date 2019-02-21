@@ -7733,6 +7733,11 @@
     font-size: 14px;
     text-align: justify;
   }
+  .landing{
+    font-size: 14px;
+    text-align: justify;
+    color: darkgrey;
+  }
 
   @media only screen and (max-width : 3in){
     .wrap {
